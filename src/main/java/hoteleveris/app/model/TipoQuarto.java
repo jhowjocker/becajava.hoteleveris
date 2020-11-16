@@ -10,15 +10,30 @@ public class TipoQuarto {
 		
 		@Id
 		@GeneratedValue(strategy = GenerationType.IDENTITY)
-		private Long Id;
+		private Long id;
 		private String descricao;
 		private double valor;
 		
+		public TipoQuarto() {
+			
+		}
+		
+		public TipoQuarto(Long id) {
+			super();
+			this.id = id;
+		}	
+		
+		public TipoQuarto(String descricao, double valor) {
+			super();
+			this.descricao = descricao;
+			this.valor = valor;
+		}
+		
 		public Long getId() {
-			return Id;
+			return id;
 		}
 		public void setId(Long id) {
-			Id = id;
+			id = id;
 		}
 		public String getDescricao() {
 			return descricao;

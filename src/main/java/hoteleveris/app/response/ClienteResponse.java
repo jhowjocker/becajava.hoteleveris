@@ -7,11 +7,10 @@ import javax.persistence.GenerationType;
 
 import hoteleveris.app.response.BaseResponse;
 
-@Entity
+
 public class ClienteResponse extends BaseResponse{
 			
-		@Id
-		@GeneratedValue(strategy = GenerationType.IDENTITY)
+		
 		private Long Id;
 		private String nome;
 		private String cpf;

@@ -15,9 +15,9 @@ public class Ocupacao {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-	private Date data;
-	private int qtdeDiarias;
-	private String situacao;
+	private String data;
+	private int diarias;
+	private String situacaoPagamento;
 	
 	@ManyToOne
 	@JoinColumn(name = "clienteId")
@@ -35,28 +35,28 @@ public class Ocupacao {
 		this.id = id;
 	}
 
-	public Date getData() {
+	public String getData() {
 		return data;
 	}
 
-	public void setData(Date data) {
+	public void setData(String data) {
 		this.data = data;
 	}
 
-	public int getQtdeDiarias() {
-		return qtdeDiarias;
+	public int getDiarias() {
+		return diarias;
 	}
 
-	public void setQtdeDiarias(int qtdeDiarias) {
-		this.qtdeDiarias = qtdeDiarias;
+	public void setDiarias(int diarias) {
+		this.diarias = diarias;
 	}
 
-	public String getSituacao() {
-		return situacao;
+	public String getSituacaoPagamento() {
+		return situacaoPagamento;
 	}
 
-	public void setSituacao(String situacao) {
-		this.situacao = situacao;
+	public void setSituacaoPagamento(String situacaoPagamento) {
+		this.situacaoPagamento = situacaoPagamento;
 	}
 
 	public Cliente getCliente() {
@@ -74,6 +74,7 @@ public class Ocupacao {
 	public void setQuarto(Quarto quarto) {
 		this.quarto = quarto;
 	}
+
 	
 	
 	
