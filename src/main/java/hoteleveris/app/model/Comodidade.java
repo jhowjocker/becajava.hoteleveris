@@ -18,6 +18,16 @@ public class Comodidade {
 	private Long id;
 	private String nome;
 	
+	public Comodidade() {
+		
+	}
+	
+	public Comodidade(String nome) {
+		super();
+		this.nome = nome;
+	}
+	
+	
 	public Comodidade(Long id) {
 		super();
 		this.id = id;
