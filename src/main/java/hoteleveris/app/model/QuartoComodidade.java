@@ -22,6 +22,10 @@ public class QuartoComodidade {
 	@JoinColumn(name = "quartoId")
 	private Quarto quarto;
 	
+	public QuartoComodidade () {
+		
+	}
+	
 	
 	public QuartoComodidade(Quarto quarto, Comodidade comodidade) {
 		this.quarto = quarto;
@@ -29,7 +33,7 @@ public class QuartoComodidade {
 	}
 	
 
-	public Long getId() {
+		public Long getId() {
 		return Id;
 	}
 
