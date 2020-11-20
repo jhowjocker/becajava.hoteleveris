@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import hoteleveris.app.request.ComodidadeIdRequest;
+import hoteleveris.app.request.ComodidadeRequest;
 import hoteleveris.app.response.BaseResponse;
 import hoteleveris.app.service.ComodidadeService;
 

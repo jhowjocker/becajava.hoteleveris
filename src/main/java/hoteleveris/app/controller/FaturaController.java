@@ -6,19 +6,19 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import hoteleveris.app.service.FaturaService;
+import hoteleveris.app.service.imp.FaturaServiceImp;
 
 @RestController
 @RequestMapping("/fatura")
 public class FaturaController {
 
 		@Autowired
-		private FaturaService _service;
+		private FaturaServiceImp _service;
 		
 		@PostMapping
-		public ResponseEntity inserir() {
+		public ResponseEntity transferencia() {
 			try {
-					_service.inserir();
+					_service.transferencia();
 					return ResponseEntity.status(200).body("Faturas inseridas com sucesso");
 					
 			}catch (Exception e) {

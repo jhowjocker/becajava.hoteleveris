@@ -8,7 +8,6 @@ public class OcupacaoRequest {
 	private Long clienteId;
 	private Long quartoId;
 	
-	
 	public String getData() {
 		return data;
 	}
@@ -18,7 +17,7 @@ public class OcupacaoRequest {
 	public int getDiarias() {
 		return diarias;
 	}
-	public void setDiaria(int diarias) {
+	public void setDiarias(int diarias) {
 		this.diarias = diarias;
 	}
 	public String getSituacaoPagamento() {
@@ -41,5 +40,5 @@ public class OcupacaoRequest {
 	}
 	
 	
-
+	
 }

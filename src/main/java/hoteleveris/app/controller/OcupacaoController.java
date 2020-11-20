@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import hoteleveris.app.request.OcupacaoRequest;
 import hoteleveris.app.response.BaseResponse;
-import hoteleveris.app.service.OcupacaoService;
+import hoteleveris.app.service.imp.OcupacaoServiceImp;
 
 @RestController
 @RequestMapping("/ocupacoes")
@@ -18,7 +18,7 @@ public class OcupacaoController extends BaseController {
 	
 	
 	@Autowired
-	OcupacaoService service;
+	OcupacaoServiceImp service;
 	
 	@PostMapping
 	public ResponseEntity<BaseResponse> criar(@RequestBody OcupacaoRequest request){
